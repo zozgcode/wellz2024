@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import { usePathname, redirect } from "next/navigation";
 
-export default function ProtectedRoute({ children }) {
+export default function ProtectedRoute({ children }:any) {
   const pathname = usePathname();
   let isAuthenticated = false;
 
