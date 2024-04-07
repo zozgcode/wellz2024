@@ -33,31 +33,31 @@ export default function Login() {
   return (
     <div className=''>
       <Header />
-      <div className='border h-screen px-8'>
+      <div className='h-screen bg-white'>
         <div>
         {error && <p>{error}</p>}
         </div>
         <div className="">
-          <div className="text-center text-[#333131] flex flex-col gap-5 text-[25px] font-semibold leading-[25px] mt-16 mb-8">
+          <div className="text-center text-[#333131] flex flex-col gap-5 text-[25px] font-semibold leading-[25px] pt-8 mb-8">
             {hour >= 12 ? (hour >= 17 ? <h2>Good Evening</h2> : <h2>Good Afternoon</h2>) : <h2>Good Morning</h2>}
             <span className='text-xl font-normal'>Sign on to manage your accounts</span>
           </div>
-          <div className="border border-b-red-500 mx-auto rounded-xl max-w-[400px] p-7">
+          <div className="bg-white mx-auto rounded-xl max-w-[400px] p-7">
             <form onSubmit={handleLogin}>
               <div className='flex flex-col gap-2'>
-                <label htmlFor="username" className='relative text-lg top-[40px]'>Username</label>
-                <input type="text" value={username} className='p-5 bg-transparent pl-0 pb-2 pt-11 border border-b-red-500 outline-none'
+                {/* <label htmlFor="username" className='relative text-lg top-[40px]'>Username</label> */}
+                <input type="text" value={username} placeholder='Username' className='p-5 bg-transparent pl-0 pb-5 pt-11 border-b border-b-gray-300 outline-none'
                 onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
               <div className='flex flex-col gap-2'>
-                <label htmlFor="password" className='relative text-lg top-[40px]'>Password</label>
-                <input type="text" value={password} className='p-5 bg-transparent pl-0 pb-2 pt-11 border border-b-red-500 outline-none'
+                {/* <label htmlFor="password" className='relative text-lg top-[40px]'>Password</label> */}
+                <input type="text" value={password} placeholder='Password' className='p-5 bg-transparent pl-0 pb-5 pt-11 border-b border-b-gray-300 outline-none'
                 onChange={(e) => setPassword(e.target.value)} 
                 />
               </div>
               <div className='flex flex-col gap-2 mt-12'>
-                <button type='submit' className="p-3 bg-[#d71e28] rounded-[10px] text-white">Login</button>
+                <button type='submit' className="p-4 bg-[#d71e28] mx-auto rounded-full w-[200px] text-white">Sign on</button>
               </div>
             </form>
           </div>
