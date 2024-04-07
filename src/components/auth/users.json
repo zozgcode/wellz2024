@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Gregory Hartmann",
+      "profileImg": "https://i.imgur.com/40chrc5.png",
+      "cardName": "Gregory Hartmann",
+      "username": "testing",
+      "password": "testing",
+      "checkingAmount": "1,800,000.00",
+      "checkingAccountNo": "...9999",
+      "createdOn": "d/m/y"
+    },
+    {
+      "id": 2,
+      "name": "West Lifeman",
+      "profileImg": "",
+      "cardName": "West Lifeman",
+      "username": "testing2",
+      "password": "testing2",
+      "checkingAmount": "560,000.00",
+      "checkingAccountNo": "...9998",
+      "createdOn": "d/m/y"
+    }
+  ]
+}
