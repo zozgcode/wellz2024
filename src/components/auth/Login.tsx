@@ -45,13 +45,11 @@ export default function Login() {
           <div className="bg-white mx-auto rounded-xl max-w-[400px] p-7">
             <form onSubmit={handleLogin}>
               <div className='flex flex-col gap-2'>
-                {/* <label htmlFor="username" className='relative text-lg top-[40px]'>Username</label> */}
                 <input type="text" value={username} placeholder='Username' className='p-5 bg-transparent pl-0 pb-5 pt-11 border-b border-b-gray-300 outline-none'
                 onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
               <div className='flex flex-col gap-2'>
-                {/* <label htmlFor="password" className='relative text-lg top-[40px]'>Password</label> */}
                 <input type="text" value={password} placeholder='Password' className='p-5 bg-transparent pl-0 pb-5 pt-11 border-b border-b-gray-300 outline-none'
                 onChange={(e) => setPassword(e.target.value)} 
                 />

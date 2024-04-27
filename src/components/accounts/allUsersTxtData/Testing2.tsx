@@ -15,7 +15,7 @@ export default function TestingTwo() {
       {top7TxData.length === 0 && <div className="text-center">No transaction yet.</div>}
       {top7TxData.map((txt, i) => (
         <div key={i} className="border justify-between flex bg-white p-4 max-[470px]:px-2 w-full rounded-lg">
-          <div className="flex gap-1">
+          <div className="flex gap-2">
             <div className="border w-7 sm:w-8 h-7 sm:h-8 flex items-center text-lg sm:text-xl justify-center text-[#d71e28] rounded-full bg-[#d71e28]/10">
               {txt.whatUsed === "Credit" && <TbArrowBackUpDouble />}
               {txt.whatUsed === "Debit" && <TbArrowForwardUpDouble />}
